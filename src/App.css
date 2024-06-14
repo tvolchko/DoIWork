@@ -37,6 +37,9 @@
   }
 }
 
+img {
+  max-width: 100%;
+}
 button {
   align-items: center;
   appearance: none;
