@@ -9,9 +9,6 @@ import ECASiteCalendar from "./ecaCalendar";
 const HomePage = () => {
     const [selected, setSelected] = useState()
     const buttonClick = (e) => {
-        
-
-        const destination = e.target.id
         setSelected(e.target.id)
     }
     const pageSelect = (def) => {
@@ -41,7 +38,7 @@ const HomePage = () => {
         return (
             <>
                 <h2>Cargill Eddyville</h2>
-                <div id="calendarBox" style={(selected) ? {display:'none'} : {display:'flex'}}>
+                <div  id="calendarBox" style={(selected) ? {display:'none'} : {display:'flex'}}>
                     
                     <div id="calendarLeft">
                         <button id="Crew" onClick={buttonClick}   >Crew Calendars</button>

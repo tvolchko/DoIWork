@@ -75,12 +75,15 @@ button {
   width: auto;
   word-break: keep-all;
   z-index: 0;
+  width: 100%;
+  height: 5rem;
 }
 
 @media (min-width: 768px) {
   button {
     padding: 19px 32px;
-    margin-left: 3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     margin-bottom: 1rem;
     margin: 3rem, 3rem, 3rem, 3rem;
     width: 20rem;
@@ -164,4 +167,8 @@ h2 {
   outline: #770707, solid, 4rem;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+}
+
+#calendarRight {
+  box-shadow: -2px 0 0 rgb(23, 113, 122);
 }
