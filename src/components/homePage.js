@@ -37,18 +37,20 @@ const HomePage = () => {
     const reset = () => {
         setSelected(null)
     }
-    // if(!selected){
+
         return (
             <>
-                
-                <div id="calendarBox" style={(selected) ? {display:'none'} : null}>
-                    <h2>Select Calendar</h2>
+                <h2>Cargill Eddyville</h2>
+                <div id="calendarBox" style={(selected) ? {display:'none'} : {display:'flex'}}>
+                    
                     <div id="calendarLeft">
                         <button id="Crew" onClick={buttonClick}   >Crew Calendars</button>
+                        <br/>
                         <button id="Site" onClick={buttonClick}   >Site Calendar</button>
                     </div>
                     <div id="calendarRight">
                         <button id="ECA" onClick={buttonClick}    >ECA Crew Calendars</button>
+                        <br/>
                         <button id="ECASite" onClick={buttonClick}>ECA Calendar</button>
                     </div>
                     

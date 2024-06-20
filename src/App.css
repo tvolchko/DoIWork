@@ -80,6 +80,12 @@ button {
 @media (min-width: 768px) {
   button {
     padding: 19px 32px;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    margin: 3rem, 3rem, 3rem, 3rem;
+    width: 20rem;
+    height: 5rem;
+    text-shadow: -1.3px -1.3px 0 #000, 1.3px -1.3px 0 #000, -1.3px 1.3px 0 #000, 1.3px 1.3px 0 #000;
   }
 }
 
@@ -89,7 +95,7 @@ button:after {
 }
 
 button:before {
-  background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  background-image: linear-gradient(92.83deg, rgb(23, 113, 122) 0, rgb(23, 70, 122) 100%);
   content: "";
   display: block;
   height: 100%;
@@ -103,7 +109,7 @@ button:before {
 
 button:after {
   background-color: initial;
-  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+  background-image: linear-gradient(rgb(23, 113, 122) 0, #1f2222 100%);
   bottom: 4px;
   content: "";
   display: block;
@@ -152,7 +158,10 @@ button:disabled {
 
 h2 {
   /* color: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%); */
-  color: #ff7426;
-  /* outline: #0c0d0d;
-  outline-width: 500rem; */
+  color: rgb(23, 113, 122);
+  /* outline-color: white;
+  outline-width: 4rem; */
+  outline: #770707, solid, 4rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
