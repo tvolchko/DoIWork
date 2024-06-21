@@ -160,15 +160,19 @@ button:disabled {
 }
 
 h2 {
-  /* color: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%); */
   color: rgb(23, 113, 122);
-  /* outline-color: white;
-  outline-width: 4rem; */
-  outline: #770707, solid, 4rem;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 
 #calendarRight {
-  box-shadow: -2px 0 0 rgb(23, 113, 122);
+  box-shadow: -5px 0 0 rgb(23, 113, 122);
+  padding-left: 2rem;
+  padding-right: 1rem;
 }
+
+#calendarLeft {
+  padding-right: 2rem;
+  padding-left: 1rem;
+}
+
