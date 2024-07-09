@@ -4,10 +4,12 @@ import CrewCalendar from "./crewCalendars";
 import SiteCalendar from "./siteCalendar";
 import ECACrewCalendar from "./ecaCrewCalendar";
 import ECASiteCalendar from "./ecaCalendar";
-
+import MillCrewCalendar from "./millCrewCalendars";
+import MillSite from "./millSite";
 
 const HomePage = () => {
     const [selected, setSelected] = useState()
+
     const buttonClick = (e) => {
         setSelected(e.target.id)
     }
@@ -25,11 +27,19 @@ const HomePage = () => {
             case "ECASite" : {
                 return <ECASiteCalendar/>
             }
+            case "Mill" : {
+                return <MillCrewCalendar/>
+            }
+            case "MillSite" : {
+                return <MillSite/>
+            }
             default: {
                 
             }
         }
     }
+
+
 
     const reset = () => {
         setSelected(null)
@@ -38,17 +48,24 @@ const HomePage = () => {
         return (
             <>
                 <h2>Cargill Eddyville</h2>
-                <div  id="calendarBox" style={(selected) ? {display:'none'} : {display:'flex'}}>
+                <div  id="calendarBox" style={(selected) ? {display:'none'} : {flexWrap:'wrap'}}>
                     
                     <div id="calendarLeft">
-                        <button id="Crew" onClick={buttonClick}   >Crew Calendars</button>
-                        <br/>
                         <button id="Site" onClick={buttonClick}   >Site Calendar</button>
-                    </div>
-                    <div id="calendarRight">
-                        <button id="ECA" onClick={buttonClick}    >ECA Crew Calendars</button>
                         <br/>
+                        <button id="Crew" onClick={buttonClick}   >Crew Calendars</button>
+                    </div>
+
+                    <div id="calendarMiddle">
                         <button id="ECASite" onClick={buttonClick}>ECA Calendar</button>
+                        <br/>
+                        <button id="ECA" onClick={buttonClick}    >ECA Crew Calendars</button>
+                    </div>
+
+                    <div id="calendarRight">
+                        <button id="MillSite" onClick={buttonClick}>Mill Calendar</button>
+                        <br/>
+                        <button id="Mill" onClick={buttonClick}    >Mill Crew Calendars</button> 
                     </div>
                     
                 </div>
@@ -57,31 +74,7 @@ const HomePage = () => {
                 
             </>
         )
-    // } else {
-    //     return <div><h1>Duhhhh</h1>
-    //             <button onClick={setSelected(null)}>Reset</button>
-    //             </div>
-    // }
+
 }
 
 export default HomePage
-
-
-        // switch (e.target.id) {
-        //     case "Crew" : {
-        //         setSelected("Crew")
-        //         console.log(selected)
-        //     }
-        //     case "Site" : {
-        //         setSelected(true)
-        //     }
-        //     case "ECA" : {
-        //         setSelected(true)
-        //     }
-        //     case "ECASite" : {
-        //         setSelected(true)
-        //     }
-        //     default: {
-                
-        //     }
-        // }
