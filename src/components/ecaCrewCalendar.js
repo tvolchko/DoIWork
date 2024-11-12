@@ -35,7 +35,7 @@ const ECACrewCalendar = () => {
             case "2025" : {
                 switch (cal) {
                     case "A" : {
-                        return (<><img src={require('../calendarImages/2025/ecaa-1.png')}/><img src={require('../calendarImages/2025/ecaa-1.png')}/></>)
+                        return (<><img src={require('../calendarImages/2025/ecaa-1.png')}/></>)
                     }
                     case "B" : {
                         return (<><img src={require('../calendarImages/2025/ecab-1.png')}/><img src={require('../calendarImages/2025/ecab-2.png')}/></>)
