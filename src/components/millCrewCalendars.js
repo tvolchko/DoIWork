@@ -70,6 +70,7 @@ const MillCrewCalendar = () => {
             <button id="B" onClick={calButton}>B</button>
             <button id="C" onClick={calButton}>C</button>
             <button id="D" onClick={calButton}>D</button>
+            <button id="E" onClick={calButton}>E</button>
         </div>
         {cal ? calSelector() : null}
         </>
