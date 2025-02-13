@@ -38,13 +38,13 @@ const ECACrewCalendar = () => {
                         return (<><img src={require('../calendarImages/2025/ecaa-1.png')}/></>)
                     }
                     case "B" : {
-                        return (<><img src={require('../calendarImages/2025/ecab-1.png')}/><img src={require('../calendarImages/2025/ecab-2.png')}/></>)
+                        return (<><img src={require('../calendarImages/2025/ecab-1.png')}/></>)
                     }
                     case "C" : {
-                        return (<><img src={require('../calendarImages/2025/ecac-1.png')}/><img src={require('../calendarImages/2025/ecac-2.png')}/></>)
+                        return (<><img src={require('../calendarImages/2025/ecac-1.png')}/></>)
                     }
                     case "D" : {
-                        return (<><img src={require('../calendarImages/2025/ecad-1.png')}/><img src={require('../calendarImages/2025/ecad-2.png')}/></>)
+                        return (<><img src={require('../calendarImages/2025/ecad-1.png')}/></>)
                     }
                     default: {
                     }
